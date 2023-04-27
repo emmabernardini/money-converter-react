@@ -1,0 +1,12 @@
+@use "../../styles/vars";
+
+body {
+  font-family: vars.$font;
+}
+
+.app {
+  width: 100vw;
+  margin: 0 auto;
+  border: 10px solid vars.$color-alternate;
+  text-align: center;
+}

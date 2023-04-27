@@ -1,0 +1,23 @@
+@use "../../styles/vars";
+
+
+.header {
+  color: vars.$color-light;
+  background-color: vars.$color-main;
+  padding: 2 * vars.$gutter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    font-size: 2rem;
+    font-weight: vars.$fw-bold;
+  }
+
+  &-subtitle {
+    font-size: 1.5rem;
+    font-weight: vars.$fw-light;
+    margin-top: vars.$gutter;
+  }
+
+}

@@ -1,0 +1,46 @@
+@use "../../styles/vars";
+
+
+.currencies {
+  color: vars.$color-main;
+  font-size: 1.2rem;
+  max-height: 60vh;
+  max-height: 350px;
+  overflow-y: auto;
+  text-align: left;
+
+  &-search {
+    padding: vars.$gutter;
+    border: none;
+    width: 100%;
+    color: vars.$color-main;
+    font-size: 1.2rem;
+    font-family: vars.$font;
+
+    &::placeholder {
+      color: vars.$color-alternate;
+    }
+  }
+
+  .currencies-list {
+
+    .currency {
+      font-weight: vars.$fw-normal;
+      padding: vars.$gutter;
+      border-top: 1px solid vars.$color-alternate;
+      transition: vars.$transition-fast;
+      cursor: pointer;
+
+      &:hover {
+        background-color: vars.$color-alternate;
+      }
+
+      &--selected {
+        color: vars.$color-light;
+        background-color: vars.$color-main;
+      }
+    }
+
+
+  }
+}

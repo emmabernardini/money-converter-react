@@ -1,0 +1,21 @@
+@use "../../styles/vars";
+
+
+.amount {
+  color: vars.$color-main;
+  padding: 2 * vars.$gutter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &-title {
+    font-weight: vars.$fw-bold;
+    font-size: 2rem;
+  }
+
+  &-subtitle {
+    font-size: 1.5rem;
+    margin-top: vars.$gutter;
+  }
+}
